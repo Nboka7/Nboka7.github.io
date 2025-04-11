@@ -1,75 +1,87 @@
-Конечно! Вот простой шаблон сайта с достопримечательностями Алматы. Это HTML-страница, которую ты можешь открыть в браузере или использовать как основу для дальнейшей разработки:
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Достопримечательности Алматы</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #00695c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 30px;
-        }
-        .place {
-            background-color: white;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .place img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        h2 {
-            color: #004d40;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Достопримечательности Алматы</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .place {
+      background: white;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .place img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .place-content {
+      padding: 15px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #2e8b57;
+    }
+  </style>
 </head>
 <body>
 
-<header>
+  <header>
     <h1>Достопримечательности Алматы</h1>
-</header>
+  </header>
 
-<main>
-    <div class="place">
-        <h2>Кок-Тобе</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Kok-Tobe_Hill.jpg" alt="Кок-Тобе">
-        <p>Кок-Тобе — гора, расположенная на юго-востоке Алматы. Это популярное место для прогулок, где находится телебашня, парк, аттракционы и кафе.</p>
+  <div class="place">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kok_Tobe_-_Almaty.jpg" alt="Кок-Тобе">
+    <div class="place-content">
+      <h2>Кок-Тобе</h2>
+      <p>Гора с прекрасным видом на город, парком, колесом обозрения и памятником Битлз.</p>
     </div>
+  </div>
 
-    <div class="place">
-        <h2>Медео</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Medeo_Skating_Rink.jpg" alt="Медео">
-        <p>Медео — высокогорный спортивный комплекс, известный своим катком. Он находится на высоте 1691 метров над уровнем моря.</p>
+  <div class="place">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Ascension_Cathedral_Almaty.jpg" alt="Вознесенский кафедральный собор">
+    <div class="place-content">
+      <h2>Вознесенский собор</h2>
+      <p>Один из самых высоких деревянных соборов в мире, построен без единого гвоздя.</p>
     </div>
+  </div>
 
-    <div class="place">
-        <h2>Большое Алматинское озеро</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Big_Almaty_Lake.jpg" alt="Большое Алматинское озеро">
-        <p>Живописное горное озеро в Иле-Алатауском национальном парке, популярное среди туристов и фотографов.</p>
+  <div class="place">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Big_Almaty_Lake.jpg" alt="Большое Алматинское озеро">
+    <div class="place-content">
+      <h2>Большое Алматинское озеро</h2>
+      <p>Горное озеро с бирюзовой водой, расположенное на высоте 2511 м над уровнем моря.</p>
     </div>
+  </div>
 
-    <div class="place">
-        <h2>Парк имени 28 гвардейцев-панфиловцев</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Panfilov_Park_Almaty.jpg" alt="Парк Панфилова">
-        <p>Один из самых известных парков города, где находится Вознесенский кафедральный собор и памятник героям Великой Отечественной войны.</p>
+  <div class="place">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Medeo_skating_rink_Almaty.jpg" alt="Медео">
+    <div class="place-content">
+      <h2>Медео</h2>
+      <p>Высокогорный каток, известный как один из самых быстрых в мире.</p>
     </div>
-</main>
+  </div>
+
+  <div class="place">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Shymbulak_Ski_Resort_Almaty.jpg" alt="Шымбулак">
+    <div class="place-content">
+      <h2>Шымбулак</h2>
+      <p>Популярный горнолыжный курорт, расположенный рядом с Медео.</p>
+    </div>
+  </div>
 
 </body>
-</html>
-
-Хочешь добавить карту, кнопки маршрута, языковую поддержку или что-то ещё?
+</html
